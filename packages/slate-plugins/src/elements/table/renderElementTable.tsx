@@ -3,9 +3,12 @@ import { RenderElementProps } from 'slate-react';
 import styled from 'styled-components';
 import { getElement } from '../utils';
 import { RenderElementTableOptions, TableType } from './types';
+import { PopoutOverlayElement } from '../../popout';
 
 const StyledTable = styled.table`
   margin: 10px 0;
+  width: 100%;
+  position: relative;
   border-collapse: collapse;
 `;
 
@@ -16,6 +19,7 @@ const Td = styled.td`
 
 const TableElement = ({ attributes, children }: RenderElementProps) => (
   <StyledTable {...attributes} data-slate-type={TableType.TABLE}>
+    <PopoutOverlayElement />
     <tbody>{children}</tbody>
   </StyledTable>
 );
