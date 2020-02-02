@@ -5,9 +5,7 @@ const Overlay = styled.div`
   position: absolute;
   right: 0;
   bottom: 0;
-  font-size: 0.9em;
-  background-color: lightgray;
-  border-radius: 8px;
+  font-size: 0.8em;
   padding: 0 5px;
 `;
 

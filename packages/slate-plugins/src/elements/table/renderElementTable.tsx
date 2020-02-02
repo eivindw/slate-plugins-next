@@ -1,9 +1,9 @@
 import React from 'react';
 import { RenderElementProps } from 'slate-react';
 import styled from 'styled-components';
+import { PopoutOverlayElement } from '../../popout';
 import { getElement } from '../utils';
 import { RenderElementTableOptions, TableType } from './types';
-import { PopoutOverlayElement } from '../../popout';
 
 const StyledTable = styled.table`
   margin: 10px 0;

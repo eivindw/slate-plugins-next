@@ -30,7 +30,7 @@ export const Example = () => {
     const [value, setValue] = useState(initialValueTables);
 
     const editor = useMemo(
-      () => withHistory(withReact(createEditor())),
+      () => withTable(withHistory(withReact(createEditor()))),
       []
     );
 
